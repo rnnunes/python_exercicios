@@ -20,4 +20,4 @@ git push origin main
 enviar para o github diretamente para a main
 
 git pull:
-puchar para do github para o computer
+puchar para do github para o computer.
