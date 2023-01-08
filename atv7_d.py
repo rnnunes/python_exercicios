@@ -1,5 +1,3 @@
-
-
 print('=== GERADOR DE PA ===')
 
 primeiro_termo = int(input('Primeiro Termo: '))
