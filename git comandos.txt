@@ -1,4 +1,4 @@
-subir pelo git bash
+subir pelo git bash ou ir verificando pelo vs code
 
 para clonar:
 git clone + url do repositorio
@@ -10,8 +10,14 @@ verificar
 git add .
 antes de dar o commit
 
-git push
-enviar para o github
+git commit =m "mensagem"
+
+
+git log:
+historico
+
+git push origin main
+enviar para o github diretamente para a main
 
 git pull:
 puchar para do github para o computer
