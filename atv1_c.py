@@ -1,0 +1,10 @@
+print('****'*20)
+print('Olá Professor, Infome as notas do Aluno:')
+print('Primeira Nota:')
+n1 = float(input())
+print('Segunda Nota:')
+n2 = float(input())
+
+print('==='*20)
+print('')
+print('A média do Aluno é {:.1f}.'.format((n1 + n2) / 2))
