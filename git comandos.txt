@@ -1,0 +1,17 @@
+subir pelo git bash
+
+para clonar:
+git clone + url do repositorio
+
+
+git status:
+verificar
+
+git add .
+antes de dar o commit
+
+git push
+enviar para o github
+
+git pull:
+puchar para do github para o computer
