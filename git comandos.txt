@@ -1,9 +1,5 @@
 subir pelo git bash ou ir verificando pelo vs code
 
-para clonar:
-git clone + url do repositorio
-
-
 git status:
 verificar
 
@@ -21,3 +17,18 @@ enviar para o github diretamente para a main
 
 git pull:
 puchar para do github para o computer.
+
+
+no git bash já na pasta
+
+para clonar um repositorio do github:
+git clone + url do repositorio
+
+para inicializar um repositorio a partir de uma pasta no computer:
+
+git init
+
+git remote add origin + url repositorio github / quando for criada a pasta na maquina e tiver de subir
+
+git push origin main 
+para enviar da pasta local para o github
