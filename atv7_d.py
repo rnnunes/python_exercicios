@@ -1,4 +1,4 @@
-print('=== GERADOR DE PA ===')
+print('=== GERADOR DE PA V2 ===')
 
 primeiro_termo = int(input('Primeiro Termo: '))
 razao = int(input('Razão da PA: '))

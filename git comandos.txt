@@ -30,5 +30,6 @@ git init
 
 git remote add origin + url repositorio github / quando for criada a pasta na maquina e tiver de subir
 
-git push origin main 
+git push origin master
+obs verificar se é main ou master
 para enviar da pasta local para o github
