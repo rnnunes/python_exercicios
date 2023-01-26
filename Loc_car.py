@@ -2,12 +2,12 @@ import os
 
 
 def mostrar_lista_de_carros(lista_de_carros):
-    for i, car in enumerate(lista_de_carros):
-        print('[{}] {} - R$ {} /dia'.format(i, car[0], car[1]))
+        for i, car in enumerate(lista_de_carros):
+                print('[{}] {} - R$ {} /dia'.format(i, car[0], car[1]))
 
 
 def linha():
-    print("==============================")
+        print("==============================")
 
 
 carros = [
