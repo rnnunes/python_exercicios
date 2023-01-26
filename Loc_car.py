@@ -49,7 +49,16 @@ while True:
                 os.system('cls')
 
                 if len(carros) == 0:
-                       print('Infelizmente todos os carros já foram alugados, por favor aguarde!')
+                        print('Infelizmente todos os carros já foram alugados, por favor aguarde!')
+
+                        linha()
+                        res7 = int(input('0 - CONTINUAR | 1 - SAIR\n'))
+                        if res7 == 0:
+                                os.system('cls')
+                        if res7 == 1:
+                                break
+                        os.system('cls')
+
                 else:
                         print('[- ALUGAR -] Dê uma olhada em nosso portifólio.\n')
 
@@ -86,7 +95,15 @@ while True:
                 os.system('cls')
 
                 if len(alugueis) == 0:
-                       print('Não existem carros para serem devolvidos!')
+                        print('Não existem carros para serem devolvidos!\n')
+                        linha()
+                        res6 = int(input('0 - CONTINUAR | 1 - SAIR\n'))
+                        if res6 == 0:
+                                os.system('cls')
+                        if res6 == 1:
+                                break
+
+                        os.system('cls')
                 else:
                         print('Segue a lista de carros alugados. Qual carro foi devolvido? \n')
                         mostrar_lista_de_carros(alugueis)
