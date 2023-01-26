@@ -1,7 +1,6 @@
 import os
 
 
-
 def mostrar_lista_de_carros(lista_de_carros):
     for i, car in enumerate(lista_de_carros):
         print('[{}] {} - R$ {} /dia'.format(i, car[0], car[1]))
@@ -9,7 +8,6 @@ def mostrar_lista_de_carros(lista_de_carros):
 
 def linha():
     print("==============================")
-
 
 
 carros = [
@@ -31,9 +29,8 @@ while True:
         print("Bem Vendo à locadora de carros!")
         linha()
 
-
         print("\nO que deseja fazer?")
-        res = int(input('0 - Mostrar portifólio || 1 - Alugar um carro || 2 - Devolver um carro\n'))
+        res = int(input('0 - Mostrar portifólio | 1 - Alugar um carro | 2 - Devolver um carro | 3 - Sair\n'))
 
         if res == 0:
                 os.system('cls')
@@ -45,8 +42,8 @@ while True:
                 if res1 == 0:
                         os.system('cls')
                 elif res1 == 1:
-                       os.system('cls') 
-                       break
+                        os.system('cls')
+                        break
 
         elif res == 1:
                 os.system('cls')
@@ -57,12 +54,49 @@ while True:
 
                 linha()
                 alugar = int(input('Escolha o código do carro: \n'))
-                diaria = int(input('Insira a quantidade de dias que deseja alugar: \n'))
+                diaria = int(
+                        input('Insira a quantidade de dias que deseja alugar: \n'))
                 os.system('cls')
 
-                print('Você escolheu {} por {} dias.'.format(i([alugar], diaria)))
-                print('O aluguel totalizaria R$ {}. Deseja algugar? \n\n'.format())
+                print('Você escolheu {} por {} dias.'.format(
+                        carros[alugar][0], diaria))
+                print('O aluguel totalizaria R$ {}. Deseja algugar? \n\n'.format(
+                        carros[alugar][1]*diaria))
 
                 linha()
-                print('0 - SIM | 1 - NÃO')
+                res2 = int(input('0 - SIM | 1 - NÃO\n'))
+                if res2 == 0:
+                        os.system('cls')
+                        print('Parabens você alugou o {} por {} dias.\n'.format(
+                        carros[alugar][0], diaria))
+                        alugueis.append(carros.pop(alugar))
+                        linha()
+
+                res3 = int(input('0 - CONTINUAR | 1 - SAIR\n'))
+                if res3 == 0:
+                        os.system('cls')
+                if res3 == 1:
+                        break
+
+        elif res == 2:
+                os.system('cls')
+                print('Segue a lista de carros alugados. Qual carro foi devolvido: \n')
+                mostrar_lista_de_carros(alugueis)
+                print('\n\n')
+
+                res4 = int(input('Escolha o código do carro que deseja devolver: '))
+                print('Obrigado por Alugar conoscos, o carro {} foi devolvido e pode ser alugado novamente.\n'.format(alugueis[res4][0]))
+                carros.append(alugueis.pop(res4))
+
+                linha()
+                res5 = int(input('0 - CONTINUAR | 1 - SAIR\n'))
+                if res5 == 0:
+                        os.system('cls')
+                if res5 == 1:
+                        break
+        
+        elif res == 3:
+                os.system('cls')
                 break
+
+
