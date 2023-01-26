@@ -11,14 +11,14 @@ def linha():
 
 
 carros = [
-    ("Chevrolet Tracker", 120),
-    ("Chevrolet Onix", 90),
-    ("Chevrolet Spin", 150),
-    ("Hyundai Hb20", 85),
-    ("Hyundai Tucson", 120),
-    ("Fiat Uno", 60),
-    ("Fiat Mobi", 70),
-    ("Fiat Pulse", 130)
+        ("Chevrolet Tracker", 120),
+        ("Chevrolet Onix", 90),
+        ("Chevrolet Spin", 150),
+        ("Hyundai Hb20", 85),
+        ("Hyundai Tucson", 120),
+        ("Fiat Uno", 60),
+        ("Fiat Mobi", 70),
+        ("Fiat Pulse", 130)
 ]
 alugueis = []
 
