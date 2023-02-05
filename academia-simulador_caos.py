@@ -26,3 +26,5 @@ class Academia:
         return len(num_caos) / len(self.porta_halteres)
 
 self = Academia()
+
+#pegado esse
