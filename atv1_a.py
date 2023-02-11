@@ -1,4 +1,3 @@
-
 print('=*='*20)
 print('Olá Informe um numero:')
 resposta = int(input())
